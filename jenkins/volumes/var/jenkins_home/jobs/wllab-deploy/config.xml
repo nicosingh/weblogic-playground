@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+    <actions/>
+    <description/>
+    <keepDependencies>false</keepDependencies>
+    <properties>
+        <com.coravy.hudson.plugins.github.GithubProjectProperty>
+            <projectUrl>https://github.com/nicosingh/wllab/</projectUrl>
+        </com.coravy.hudson.plugins.github.GithubProjectProperty>
+        <EnvInjectJobProperty>
+            <info>
+                <propertiesContent>ARTIFACT_PATH=target/wllab.war
+WEBLOGIC_APP_NAME=wllab
+WEBLOGIC_URL=1.2.3.4
+WEBLOGIC_TARGET=AdminServer</propertiesContent>
+                <loadFilesFromMaster>false</loadFilesFromMaster>
+            </info>
+            <on>true</on>
+            <keepJenkinsSystemVariables>true</keepJenkinsSystemVariables>
+            <keepBuildVariables>true</keepBuildVariables>
+            <overrideBuildParameters>false</overrideBuildParameters>
+            <contributors/>
+        </EnvInjectJobProperty>
+    </properties>
+    <canRoam>true</canRoam>
+    <disabled>false</disabled>
+    <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+    <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+    <triggers>
+        <hudson.triggers.SCMTrigger>
+            <spec>* * * * *</spec>
+            <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+    </triggers>
+    <concurrentBuild>false</concurrentBuild>
+    <builders>
+        <hudson.tasks.Maven>
+            <targets>clean package antrun:run@deploy-to-weblogic</targets>
+            <mavenName>maven-3.5.3</mavenName>
+            <jvmOptions/>
+            <usePrivateRepository>false</usePrivateRepository>
+            <injectBuildVariables>true</injectBuildVariables>
+        </hudson.tasks.Maven>
+    </builders>
+    <publishers/>
+    <buildWrappers>
+        <org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper>
+            <bindings>
+                <org.jenkinsci.plugins.credentialsbinding.impl.UsernamePasswordMultiBinding>
+                    <credentialsId>weblogic-credential</credentialsId>
+                    <usernameVariable>WEBLOGIC_USER</usernameVariable>
+                    <passwordVariable>WEBLOGIC_PASS</passwordVariable>
+                </org.jenkinsci.plugins.credentialsbinding.impl.UsernamePasswordMultiBinding>
+            </bindings>
+        </org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper>
+    </buildWrappers>
+    <scm class="hudson.plugins.git.GitSCM">
+        <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+                <url>https://github.com/nicosingh/wllab.git</url>
+            </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+            <hudson.plugins.git.BranchSpec>
+                <name>master</name>
+            </hudson.plugins.git.BranchSpec>
+        </branches>
+        <configVersion>2</configVersion>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <gitTool>Default</gitTool>
+        <browser class="hudson.plugins.git.browser.GithubWeb">
+            <url>https://github.com/nicosingh/wllab/</url>
+        </browser>
+    </scm>
+</project>

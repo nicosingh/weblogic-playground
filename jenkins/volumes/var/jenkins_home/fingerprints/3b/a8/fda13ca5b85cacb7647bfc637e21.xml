@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-30 20:24:42.964 UTC</timestamp>
+  <md5sum>3ba8fda13ca5b85cacb7647bfc637e21</md5sum>
+  <fileName>Credential id=weblogic-credential name=weblogic/******</fileName>
+  <usages>
+    <entry>
+      <string>wllab-deploy-test</string>
+      <ranges>1-4</ranges>
+    </entry>
+    <entry>
+      <string>wllab-deploy</string>
+      <ranges>6-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

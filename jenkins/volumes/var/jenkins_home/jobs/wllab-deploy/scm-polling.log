@@ -1,0 +1,9 @@
+Started on May 31, 2018 3:50:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 98c10763a5cb457da88dd370b657fb2f926c7b7a (origin/master)
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/nicosingh/wllab.git # timeout=10
+Found 1 remote heads on https://github.com/nicosingh/wllab.git
+[poll] Latest remote head revision on refs/heads/master is: 98c10763a5cb457da88dd370b657fb2f926c7b7a - already built by 7
+Done. Took 1.7 sec
+No changes

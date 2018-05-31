@@ -1,0 +1,1 @@
+2018-05-29 21:41:08,973 [AUDIT] Token created by 'admin': tokenId='07c64e93-f0ed-431c-9e76-764d04f719f1', issuer='jf-artifactory@d77b2d8e-8a8a-4032-8ac9-7502e40b1a83', subject='jf-artifactory@d77b2d8e-8a8a-4032-8ac9-7502e40b1a83', expiry=2473710068869, refreshable=false

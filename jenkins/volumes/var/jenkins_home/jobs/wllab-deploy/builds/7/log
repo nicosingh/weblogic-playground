@@ -1,0 +1,70 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins system variables.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting as environment variables the properties content 
+WEBLOGIC_APP_NAME=wllab
+WEBLOGIC_URL=1.2.3.4
+ARTIFACT_PATH=target/wllab.war
+WEBLOGIC_TARGET=AdminServer
+
+[EnvInject] - Variables injected successfully.
+[EnvInject] - Injecting contributions.
+Building in workspace /var/jenkins_home/workspace/wllab-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 98c10763a5cb457da88dd370b657fb2f926c7b7a (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 98c10763a5cb457da88dd370b657fb2f926c7b7a
+Commit message: "set WL deploy variables as environment variables"
+First time build. Skipping changelog.
+[wllab-deploy] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/mvn clean package antrun:run@deploy-to-****
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ wllab ---
+[INFO] Deleting /var/jenkins_home/workspace/wllab-deploy/target
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-deploy/src/main/resources
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-deploy/src/test/resources
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ wllab ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:3.2.0:war (default-war) @ wllab ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [wllab] in [/var/jenkins_home/workspace/wllab-deploy/target/wllab]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/wllab-deploy/src/main/webapp]
+[INFO] Webapp assembled in [561 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/wllab-deploy/target/wllab.war
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-antrun-plugin:1.6:run (deploy-to-****) @ wllab ---
+[INFO] Executing tasks
+
+main:
+****.Deployer -remote -upload -noexit -name wllab -source /var/jenkins_home/workspace/wllab-deploy/target/wllab.war -targets AdminServer -adminurl t3://1.2.3.4:7001 -user **** -password ******** -deploy 
+ [wldeploy] ****.Deployer invoked with options:  -remote -upload -noexit -name wllab -source /var/jenkins_home/workspace/wllab-deploy/target/wllab.war -targets AdminServer -adminurl t3://1.2.3.4:7001 -user **** -deploy
+Build was aborted
+Aborted by [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+Finished: ABORTED
