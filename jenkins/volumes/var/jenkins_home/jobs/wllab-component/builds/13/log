@@ -1,0 +1,57 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/wllab-component
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3e1b84151576c04b0b91e1dd1a889c754ba12a7b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3e1b84151576c04b0b91e1dd1a889c754ba12a7b
+Commit message: "add download-artifact task"
+ > git rev-list --no-walk 3e1b84151576c04b0b91e1dd1a889c754ba12a7b # timeout=10
+Jenkins Artifactory Plugin version: 2.16.1
+Artifactory integration is disabled
+[wllab-component] $ java -classpath /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/boot/* -Dmaven.home=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3 -Dmaven.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/conf -Dclassworlds.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/m2.conf -Dmaven.multiModuleProjectDirectory=/var/jenkins_home/workspace/wllab-component org.codehaus.plexus.classworlds.launcher.Launcher package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ wllab ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.0:war (default-war) @ wllab ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [wllab] in [/var/jenkins_home/workspace/wllab-component/target/wllab]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/wllab-component/src/main/webapp]
+[INFO] Webapp assembled in [183 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/wllab-component/target/wllab.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.283 s
+[INFO] Finished at: 2018-06-18T15:42:30Z
+[INFO] ------------------------------------------------------------------------
+Build step 'Invoke Artifactory Maven 3' changed build result to SUCCESS
+Finished: SUCCESS

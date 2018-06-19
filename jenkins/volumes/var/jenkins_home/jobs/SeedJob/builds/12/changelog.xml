@@ -1,0 +1,12 @@
+commit a1e265cc0a9ef0b4fbcb2d253211701daab7f78a
+tree 11a067a31987eaf269e5d9df7dd89b7ca693bbed
+parent 43fb20caeb14717e9135e03d046a451976f0f95d
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 11:00:35 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 11:00:35 -0400
+
+    update upstream job script for deploy job
+
+
+
+:100644 100644 b0088f640a686d1cac062719a4477c4f389dcafd 0ecb9a4392c57d4b320c515a3d277aa67102ac46 M	scripts/environmentVariablesDeploy.groovy
+:100644 100644 4ef894685832750d27b049ff81aa2dbde966e5fd 194ffcbfd8005fada7443214db3dafd0b40b00bf M	wllab.groovy

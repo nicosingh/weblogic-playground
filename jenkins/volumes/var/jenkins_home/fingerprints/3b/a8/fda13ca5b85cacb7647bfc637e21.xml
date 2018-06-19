@@ -5,12 +5,8 @@
   <fileName>Credential id=weblogic-credential name=weblogic/******</fileName>
   <usages>
     <entry>
-      <string>wllab-deploy-test</string>
-      <ranges>1-4</ranges>
-    </entry>
-    <entry>
       <string>wllab-deploy</string>
-      <ranges>6-7</ranges>
+      <ranges>7-14</ranges>
     </entry>
   </usages>
   <facets/>

@@ -1,0 +1,2 @@
+11-Jun-2018 14:39:47.541 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Using artifactory.home at '/opt/jfrog/artifactory' resolved from: System property
+11-Jun-2018 14:44:31.152 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Using artifactory.home at '/opt/jfrog/artifactory' resolved from: System property

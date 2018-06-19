@@ -1,0 +1,19 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/SeedJob
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/weblogic-playground-dsl.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/weblogic-playground-dsl.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/weblogic-playground-dsl.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 004cf37a69075f1de45a0f784fdb96e73528e62e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 004cf37a69075f1de45a0f784fdb96e73528e62e
+Commit message: "add dummy component job"
+ > git rev-list --no-walk e1889bd447b541c2d92523592e885b6b43650f3e # timeout=10
+Processing DSL script wllab.groovy
+ERROR: script not yet approved for use
+[8mha:////4KRoIyiKPkRzGQ8CzQ8iWRNDjXmbYsxPRV54UuHcUkzKAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

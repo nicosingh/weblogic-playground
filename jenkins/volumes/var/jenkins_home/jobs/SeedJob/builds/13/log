@@ -1,0 +1,20 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/SeedJob
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/weblogic-playground-dsl.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/weblogic-playground-dsl.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/weblogic-playground-dsl.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a1e265cc0a9ef0b4fbcb2d253211701daab7f78a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a1e265cc0a9ef0b4fbcb2d253211701daab7f78a
+Commit message: "update upstream job script for deploy job"
+ > git rev-list --no-walk a1e265cc0a9ef0b4fbcb2d253211701daab7f78a # timeout=10
+Processing DSL script wllab.groovy
+ERROR: (wllab.groovy, line 10) No signature of method: javaposse.jobdsl.dsl.helpers.toplevel.EnvironmentVariableContext.readFile() is applicable for argument types: (java.lang.String) values: [scripts/environmentVariablesDeploy.groovy]
+Possible solutions: scriptFile(java.lang.String)
+[8mha:////4KRoIyiKPkRzGQ8CzQ8iWRNDjXmbYsxPRV54UuHcUkzKAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

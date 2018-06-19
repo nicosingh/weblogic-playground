@@ -1,0 +1,35 @@
+2018-06-11 14:45:42,665 [ACCEPTED LOGIN]  for admin/172.17.0.1.
+2018-06-11 14:45:54,056 [ACCEPTED DELETE] example-repo-local: for admin/172.17.0.1.
+2018-06-11 14:45:55,544 [ACCEPTED CONFIGURATION_CHANGE]  for admin/172.17.0.1.
+2018-06-11 15:15:29,418 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.151527-1.war for NA/172.17.0.1.
+2018-06-11 15:15:29,466 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.151527-1.pom for NA/172.17.0.1.
+2018-06-11 15:17:39,660 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.151737-1.war for NA/172.17.0.1.
+2018-06-11 15:17:39,676 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.151737-1.pom for NA/172.17.0.1.
+2018-06-11 15:18:00,849 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.151758-1.war for NA/172.17.0.1.
+2018-06-11 15:18:00,912 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.151758-1.pom for NA/172.17.0.1.
+2018-06-11 20:59:12,751 [DENIED LOGIN]  for NA/172.17.0.3.
+2018-06-11 21:13:56,273 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.211356-1.war for NA/172.17.0.3.
+2018-06-11 21:13:56,382 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.211356-1.pom for NA/172.17.0.3.
+2018-06-11 21:16:26,831 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.211626-1.war for NA/172.17.0.3.
+2018-06-11 21:16:26,994 [DENIED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.211626-1.pom for NA/172.17.0.3.
+2018-06-11 21:16:50,061 [ACCEPTED LOGIN]  for admin/172.17.0.1.
+2018-06-18 15:49:51,348 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180618.154856-1.war for admin/172.17.0.3.
+2018-06-18 15:49:51,756 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/maven-metadata.xml for admin/172.17.0.3.
+2018-06-18 15:49:51,766 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180618.154856-1.pom for admin/172.17.0.3.
+2018-06-18 15:49:52,055 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/maven-metadata.xml for admin/172.17.0.3.
+2018-06-18 15:50:11,526 [DENIED LOGIN]  for NA/172.17.0.1.
+2018-06-18 15:50:19,569 [ACCEPTED LOGIN]  for admin/172.17.0.1.
+2018-06-18 16:26:09,344 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/maven-metadata.xml for admin/172.17.0.3.
+2018-06-18 16:26:09,353 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180618.162532-2.war for admin/172.17.0.3.
+2018-06-18 16:26:09,855 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/maven-metadata.xml for admin/172.17.0.3.
+2018-06-18 16:26:09,865 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180618.162532-2.pom for admin/172.17.0.3.
+2018-06-18 16:26:09,921 [ACCEPTED DEPLOY] libs-snapshot-local:guga/wllab/maven-metadata.xml for admin/172.17.0.3.
+2018-06-18 16:30:26,988 [ACCEPTED DEPLOY] libs-release-local:guga/wllab/16/wllab-16.war for admin/172.17.0.3.
+2018-06-18 16:30:27,182 [ACCEPTED DEPLOY] libs-release-local:guga/wllab/16/wllab-16.pom for admin/172.17.0.3.
+2018-06-18 16:30:27,410 [ACCEPTED DEPLOY] libs-release-local:guga/wllab/maven-metadata.xml for admin/172.17.0.3.
+2018-06-18 16:31:30,496 [ACCEPTED DEPLOY] libs-release-local:guga/wllab/17/wllab-17.war for admin/172.17.0.3.
+2018-06-18 16:31:30,783 [ACCEPTED DEPLOY] libs-release-local:guga/wllab/17/wllab-17.pom for admin/172.17.0.3.
+2018-06-18 16:31:30,845 [ACCEPTED DEPLOY] libs-release-local:guga/wllab/maven-metadata.xml for admin/172.17.0.3.
+2018-06-18 16:44:39,221 [ACCEPTED DOWNLOAD] libs-release-local:guga/wllab/17/wllab-17.war for anonymous/172.17.0.3.
+2018-06-19 14:29:04,214 [DENIED LOGIN]  for NA/172.17.0.1.
+2018-06-19 14:29:09,031 [ACCEPTED LOGIN]  for admin/172.17.0.1.

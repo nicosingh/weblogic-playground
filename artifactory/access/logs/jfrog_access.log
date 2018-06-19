@@ -20,3 +20,31 @@
 2018-05-31 15:00:57,077 [art-exec-5464] [INFO ] (c.j.a.s.b.AccessImporterExporter:39) - Exporting encryption...
 2018-05-31 15:00:57,241 [art-exec-5464] [INFO ] (c.j.a.s.b.AccessImporterExporter:39) - Exporting config...
 2018-05-31 15:00:57,573 [art-exec-5464] [INFO ] (c.j.a.s.b.AccessImporterExporter:39) - Exporting home...
+2018-05-31 16:22:57,675 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessApplicationContext:24) - Refreshing com.jfrog.access.server.AccessApplicationContext@739aeb76: startup date [Thu May 31 16:22:57 UTC 2018]; root of context hierarchy
+2018-05-31 16:22:58,878 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-05-31 16:22:58,881 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2018-05-31 16:23:00,502 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessServerBootstrap:170) - [ACCESS BOOTSTRAP] Updating server 'e5afaa2c-0ab4-498e-8c92-9e1ef7802af9' private key finger print to: 5882db8290e15e347adb5aba7c041a118f5e90fce01d59a8e9f2cc88cc285b9b
+2018-06-08 14:36:30,145 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessApplicationContext:24) - Refreshing com.jfrog.access.server.AccessApplicationContext@9a98618: startup date [Fri Jun 08 14:36:30 UTC 2018]; root of context hierarchy
+2018-06-08 14:36:31,196 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-06-08 14:36:31,202 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2018-06-08 14:36:32,651 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessServerBootstrap:170) - [ACCESS BOOTSTRAP] Updating server 'e5afaa2c-0ab4-498e-8c92-9e1ef7802af9' private key finger print to: 5882db8290e15e347adb5aba7c041a118f5e90fce01d59a8e9f2cc88cc285b9b
+2018-06-11 14:39:57,598 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessApplicationContext:24) - Refreshing com.jfrog.access.server.AccessApplicationContext@59130a0: startup date [Mon Jun 11 14:39:57 UTC 2018]; root of context hierarchy
+2018-06-11 14:39:58,200 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-06-11 14:39:58,203 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2018-06-11 14:39:59,581 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessServerBootstrap:170) - [ACCESS BOOTSTRAP] Updating server 'e5afaa2c-0ab4-498e-8c92-9e1ef7802af9' private key finger print to: 5882db8290e15e347adb5aba7c041a118f5e90fce01d59a8e9f2cc88cc285b9b
+2018-06-11 14:44:51,288 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessApplicationContext:24) - Refreshing com.jfrog.access.server.AccessApplicationContext@4737b1cb: startup date [Mon Jun 11 14:44:51 UTC 2018]; root of context hierarchy
+2018-06-11 14:44:52,385 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-06-11 14:44:52,386 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2018-06-11 14:44:54,561 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessServerBootstrap:170) - [ACCESS BOOTSTRAP] Updating server 'e5afaa2c-0ab4-498e-8c92-9e1ef7802af9' private key finger print to: 5882db8290e15e347adb5aba7c041a118f5e90fce01d59a8e9f2cc88cc285b9b
+2018-06-15 15:33:24,748 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessApplicationContext:24) - Refreshing com.jfrog.access.server.AccessApplicationContext@466f6643: startup date [Fri Jun 15 15:33:24 UTC 2018]; root of context hierarchy
+2018-06-15 15:33:25,772 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-06-15 15:33:25,774 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2018-06-15 15:33:27,476 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessServerBootstrap:170) - [ACCESS BOOTSTRAP] Updating server 'e5afaa2c-0ab4-498e-8c92-9e1ef7802af9' private key finger print to: 5882db8290e15e347adb5aba7c041a118f5e90fce01d59a8e9f2cc88cc285b9b
+2018-06-18 15:36:21,329 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessApplicationContext:24) - Refreshing com.jfrog.access.server.AccessApplicationContext@9a98618: startup date [Mon Jun 18 15:36:21 UTC 2018]; root of context hierarchy
+2018-06-18 15:36:22,741 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-06-18 15:36:22,742 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2018-06-18 15:36:23,941 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessServerBootstrap:170) - [ACCESS BOOTSTRAP] Updating server 'e5afaa2c-0ab4-498e-8c92-9e1ef7802af9' private key finger print to: 5882db8290e15e347adb5aba7c041a118f5e90fce01d59a8e9f2cc88cc285b9b
+2018-06-19 13:46:42,553 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessApplicationContext:24) - Refreshing com.jfrog.access.server.AccessApplicationContext@6d59427c: startup date [Tue Jun 19 13:46:42 UTC 2018]; root of context hierarchy
+2018-06-19 13:46:43,523 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-06-19 13:46:43,525 [localhost-startStop-1] [INFO ] (c.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2018-06-19 13:46:45,690 [localhost-startStop-1] [INFO ] (c.j.a.s.AccessServerBootstrap:170) - [ACCESS BOOTSTRAP] Updating server 'e5afaa2c-0ab4-498e-8c92-9e1ef7802af9' private key finger print to: 5882db8290e15e347adb5aba7c041a118f5e90fce01d59a8e9f2cc88cc285b9b

@@ -1,0 +1,11 @@
+commit 1d67bfce3c154fe3fb62aaf5d910aadd15358af9
+tree 66140e1caa748e236ea0fb146a8b9a40961df219
+parent a1e265cc0a9ef0b4fbcb2d253211701daab7f78a
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 11:04:42 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 11:04:42 -0400
+
+    update upstream job script for deploy job
+
+
+
+:100644 100644 194ffcbfd8005fada7443214db3dafd0b40b00bf 5e13b520a1f8ce07918a20087d6013f9c8e89bf3 M	wllab.groovy

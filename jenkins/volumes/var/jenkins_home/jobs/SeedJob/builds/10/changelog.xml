@@ -1,0 +1,12 @@
+commit 43fb20caeb14717e9135e03d046a451976f0f95d
+tree 1cccdf9857f0666ddba9858a408a87528bce0f19
+parent 004cf37a69075f1de45a0f784fdb96e73528e62e
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 10:50:42 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 10:50:42 -0400
+
+    add upstream job to deploy job
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 b0088f640a686d1cac062719a4477c4f389dcafd A	scripts/environmentVariablesDeploy.groovy
+:100644 100644 36aa4d46ceb0b1457629b7bf7065621f4f4d9377 4ef894685832750d27b049ff81aa2dbde966e5fd M	wllab.groovy

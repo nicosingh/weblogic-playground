@@ -1,0 +1,74 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/wllab-component
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision cfd489425cbbce7a31a31e601eacde592ddc9a84 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cfd489425cbbce7a31a31e601eacde592ddc9a84
+Commit message: "add artifactory config"
+ > git rev-list --no-walk 88a002b5dc9178e839a0dfd50b40e4d124d3f4db # timeout=10
+Jenkins Artifactory Plugin version: 2.16.1
+Artifactory integration is disabled
+[wllab-component] $ java -classpath /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/boot/* -Dmaven.home=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3 -Dmaven.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/conf -Dclassworlds.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/m2.conf -Dmaven.multiModuleProjectDirectory=/var/jenkins_home/workspace/wllab-component org.codehaus.plexus.classworlds.launcher.Launcher deploy
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ wllab ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.0:war (default-war) @ wllab ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [wllab] in [/var/jenkins_home/workspace/wllab-component/target/wllab]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/wllab-component/src/main/webapp]
+[INFO] Webapp assembled in [481 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/wllab-component/target/wllab.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ wllab ---
+[INFO] Installing /var/jenkins_home/workspace/wllab-component/target/wllab.war to /var/jenkins_home/.m2/repository/guga/wllab/1.0-SNAPSHOT/wllab-1.0-SNAPSHOT.war
+[INFO] Installing /var/jenkins_home/workspace/wllab-component/pom.xml to /var/jenkins_home/.m2/repository/guga/wllab/1.0-SNAPSHOT/wllab-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ wllab ---
+Downloading from artifactory-local: http://artifactory:8081/artifactory/libs-snapshot-local/guga/wllab/1.0-SNAPSHOT/maven-metadata.xml
+Uploading to artifactory-local: http://artifactory:8081/artifactory/libs-snapshot-local/guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.211356-1.war
+Progress (1): 2.0/2.6 kBProgress (1): 2.6 kB                        Uploading to artifactory-local: http://artifactory:8081/artifactory/libs-snapshot-local/guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.211356-1.pom
+Progress (1): 2.0/4.1 kBProgress (1): 4.1 kB                        [INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 29.085 s
+[INFO] Finished at: 2018-06-11T21:13:56Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy (default-deploy) on project wllab: Failed to deploy artifacts: Could not transfer artifact guga:wllab:war:1.0-20180611.211356-1 from/to artifactory-local (http://artifactory:8081/artifactory/libs-snapshot-local): Failed to transfer file: http://artifactory:8081/artifactory/libs-snapshot-local/guga/wllab/1.0-SNAPSHOT/wllab-1.0-20180611.211356-1.war. Return code is: 401, ReasonPhrase: Unauthorized. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Invoke Artifactory Maven 3' changed build result to FAILURE
+Build step 'Invoke Artifactory Maven 3' marked build as failure
+Finished: FAILURE

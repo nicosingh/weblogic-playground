@@ -1,0 +1,11 @@
+commit 586d1bfc28352f54df054133fb738f6ca4683de4
+tree 0d4ac112522a8bee1afdcc1f7ad43e9c841d3862
+parent f8e58abbab2ff063b8b27de9800a383078bd340e
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-19 10:20:10 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-19 10:20:10 -0400
+
+    update component DSL
+
+
+
+:100644 100644 b45fac4f52076a56c9988218e3ef0ee70c03325d 2f9bc37e5b2a4b1c0be896aee4fdee243c9d06dd M	wllab.groovy

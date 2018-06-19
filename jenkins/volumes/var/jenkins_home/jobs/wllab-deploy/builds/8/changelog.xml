@@ -1,0 +1,23 @@
+commit 3e1b84151576c04b0b91e1dd1a889c754ba12a7b
+tree 15836b6c3e8afc53316b43e94708c8c718bbd7cb
+parent f01d94892e7055d54ab62a584d056fc6ecd6e908
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 10:33:31 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 10:33:31 -0400
+
+    add download-artifact task
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 0e81b4b841218412d9420b88254c5f8f2e825dde A	count
+commit f01d94892e7055d54ab62a584d056fc6ecd6e908
+tree 0540ea9021fe5dc92d555da07bfdb4c0d190ff5f
+parent 98c10763a5cb457da88dd370b657fb2f926c7b7a
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 10:32:31 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-08 10:32:31 -0400
+
+    add download-artifact task
+
+
+
+:100644 100644 f2564bc44ece8777040284518ee09005361680a6 983613c8c57b20a808fad385d9982996c3101b2d M	.gitignore
+:100644 100644 828c8bdbf0bf262eade935cbe04c6e34d7441f75 723ad6df14b72bfd8540f81a8ab9bc9cd1de5a4f M	pom.xml

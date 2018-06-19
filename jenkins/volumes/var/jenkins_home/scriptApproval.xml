@@ -2,9 +2,30 @@
 <scriptApproval plugin="script-security@1.44">
   <approvedScriptHashes>
     <string>017d0db438428731cd600b6ebda805065433520f</string>
+    <string>01c8d0523f5e9e821d3539c9ee34f6ebb45fc123</string>
+    <string>10b2dd2ad0cf036b45f12ea2af358ac9cb3abdae</string>
+    <string>129f0ec602c1be86ebc489e0b32d1bdeabfb9337</string>
+    <string>1ec117c93834a2435e17279eca935e91ff59dddd</string>
+    <string>22c851ac71fc7d29307c3874140e489f2547ada6</string>
+    <string>386db826e900277c3422714cf345e44d9754d78a</string>
+    <string>3f1eeec42f36dffbb8701bec6c275183c7835bce</string>
     <string>445267bf3f9cffaa94d89eb5edfaedc500e53c75</string>
+    <string>4f567102f2e1b701bf4ee311544259b7ae72bcda</string>
+    <string>50ffb51bf1e1e50bcccdf47ef99ef1ae6e8d0e5b</string>
+    <string>54cacbeb7f096bfc6e69d326d93325b53e8de5de</string>
+    <string>55e62aa177fd206465e9d5f1ee1c1b9832686c82</string>
+    <string>5bc2b10a3329edf8057a2ed1f1034b35f3b5fd0e</string>
+    <string>635b272d22abb5dbe79fef4aa51cd217eb4047e8</string>
+    <string>78ebdbf879a2512645d1eb0d09aa8bf65a628dd4</string>
+    <string>7ca0a34993b09ea7861f3395f7a8a11d7eef1190</string>
+    <string>7f453e57a71dada1657bb383c677f3a00a591d68</string>
     <string>ab29178bb2a3a139dcfef2be586b1a916d8c1e2c</string>
+    <string>b7897a837ca34f7036e73cb7e02046dd2481dd81</string>
+    <string>bba66a77bcf651b56f017183e99dc29d378a6e37</string>
+    <string>c42c07c9c5a28b3279f1ada6a5f1486692cf51ea</string>
     <string>c7ccfca893df3714c5209f0bcb400abadd8ffdb2</string>
+    <string>ca553c5a4ef9386dd6075b7b5974dcead4fb4861</string>
+    <string>cb81a47169079384ab858c214a6cc6087b5adc7d</string>
   </approvedScriptHashes>
   <approvedSignatures/>
   <aclApprovedSignatures/>

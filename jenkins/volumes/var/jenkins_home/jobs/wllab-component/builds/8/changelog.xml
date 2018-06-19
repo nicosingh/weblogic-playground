@@ -1,0 +1,12 @@
+commit 88a002b5dc9178e839a0dfd50b40e4d124d3f4db
+tree ea4b411c5a84872e83fb4d0b09b62b31bba418b3
+parent 3e1b84151576c04b0b91e1dd1a889c754ba12a7b
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-11 17:11:31 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-11 17:11:31 -0400
+
+    add artifactory config
+
+
+
+:100644 100644 0e81b4b841218412d9420b88254c5f8f2e825dde 72c84143414652b3b92eff6bf367b3a9a8f5b32e M	count
+:100644 100644 723ad6df14b72bfd8540f81a8ab9bc9cd1de5a4f 2aa9086ff6d17e381dfc72e85920a9ce6d550e02 M	pom.xml

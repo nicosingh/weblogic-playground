@@ -3,15 +3,41 @@
     <description/>
     <keepDependencies>false</keepDependencies>
     <properties>
+        <hudson.model.ParametersDefinitionProperty>
+            <parameterDefinitions>
+                <hudson.model.RunParameterDefinition>
+                    <name>upstreamJob</name>
+                    <projectName>wllab-component</projectName>
+                    <description/>
+                    <filter>SUCCESSFUL</filter>
+                </hudson.model.RunParameterDefinition>
+            </parameterDefinitions>
+        </hudson.model.ParametersDefinitionProperty>
         <com.coravy.hudson.plugins.github.GithubProjectProperty>
             <projectUrl>https://github.com/nicosingh/wllab/</projectUrl>
         </com.coravy.hudson.plugins.github.GithubProjectProperty>
         <EnvInjectJobProperty>
             <info>
-                <propertiesContent>ARTIFACT_PATH=target/wllab.war
+                <propertiesContent>ARTIFACT_PATH=target/wllab-${ARTIFACT_VERSION}.war
 WEBLOGIC_APP_NAME=wllab
 WEBLOGIC_URL=1.2.3.4
 WEBLOGIC_TARGET=AdminServer</propertiesContent>
+                <groovyScriptContent>import java.util.List
+import java.util.Map
+import hudson.model.ParametersAction
+
+def out = [:]
+def parameters = currentBuild.getAction(ParametersAction).getParameters()
+def upstreamJobName = parameters.find { it.name == 'environment' } != null ? parameters.find { it.name == 'environment' }.value : 'upstreamJob'
+
+//get artifact version from upstream job
+def upstreamJob = parameters.find { it.name == upstreamJobName }
+out['ARTIFACT_VERSION'] = upstreamJob.getRun().getEnvVars().get('BUILD_NUMBER')
+out['ARTIFACT_URL'] = "http://artifactory:8081/artifactory/libs-release-local/guga/wllab/" + out['ARTIFACT_VERSION'] + "/wllab-" + out['ARTIFACT_VERSION'] + ".war"
+
+//return result
+return out
+</groovyScriptContent>
                 <loadFilesFromMaster>false</loadFilesFromMaster>
             </info>
             <on>true</on>
@@ -34,7 +60,7 @@ WEBLOGIC_TARGET=AdminServer</propertiesContent>
     <concurrentBuild>false</concurrentBuild>
     <builders>
         <hudson.tasks.Maven>
-            <targets>clean package antrun:run@deploy-to-weblogic</targets>
+            <targets>clean antrun:run@download-artifact antrun:run@deploy-to-weblogic</targets>
             <mavenName>maven-3.5.3</mavenName>
             <jvmOptions/>
             <usePrivateRepository>false</usePrivateRepository>

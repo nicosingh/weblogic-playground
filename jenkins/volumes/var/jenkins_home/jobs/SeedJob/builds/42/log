@@ -1,0 +1,24 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/SeedJob
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/weblogic-playground-dsl.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/weblogic-playground-dsl.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/weblogic-playground-dsl.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 586d1bfc28352f54df054133fb738f6ca4683de4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 586d1bfc28352f54df054133fb738f6ca4683de4
+Commit message: "update component DSL"
+ > git rev-list --no-walk 586d1bfc28352f54df054133fb738f6ca4683de4 # timeout=10
+Processing DSL script wllab.groovy
+Added items:
+    GeneratedJob{name='wllab-component-test'}
+Existing items:
+    GeneratedJob{name='wllab-deploy'}
+Unreferenced items:
+    GeneratedJob{name='wllab-component'}
+Finished: SUCCESS

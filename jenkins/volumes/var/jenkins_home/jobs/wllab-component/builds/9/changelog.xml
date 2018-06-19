@@ -1,0 +1,11 @@
+commit cfd489425cbbce7a31a31e601eacde592ddc9a84
+tree 5019a7828334f33dd667eea0a1caa4d9fe5ce0fe
+parent 88a002b5dc9178e839a0dfd50b40e4d124d3f4db
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-11 17:12:52 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-11 17:12:52 -0400
+
+    add artifactory config
+
+
+
+:100644 100644 2aa9086ff6d17e381dfc72e85920a9ce6d550e02 8e9fed9109264cd38aff1d7e89e896e35c6783cc M	pom.xml

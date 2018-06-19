@@ -1,9 +1,22 @@
-Started on May 31, 2018 3:50:00 PM
+Started on Jun 19, 2018 2:49:00 PM
 Using strategy: Default
-[poll] Last Built Revision: Revision 98c10763a5cb457da88dd370b657fb2f926c7b7a (origin/master)
- > git --version # timeout=10
- > git ls-remote -h https://github.com/nicosingh/wllab.git # timeout=10
-Found 1 remote heads on https://github.com/nicosingh/wllab.git
-[poll] Latest remote head revision on refs/heads/master is: 98c10763a5cb457da88dd370b657fb2f926c7b7a - already built by 7
-Done. Took 1.7 sec
-No changes
+[poll] Last Built Revision: Revision 7bf3c5cc4538a74f2f5a15786359ca7571894651 (origin/master)
+ERROR: Failed to record SCM polling for hudson.model.FreeStyleProject@60e4ce26[wllab-deploy]
+[8mha:////4KRoIyiKPkRzGQ8CzQ8iWRNDjXmbYsxPRV54UuHcUkzKAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.lang.NullPointerException
+	at hudson.model.RunParameterDefinition.getDefaultParameterValue(RunParameterDefinition.java:174)
+	at hudson.plugins.git.util.GitUtils.addEnvironmentContributingActionsValues(GitUtils.java:332)
+	at hudson.plugins.git.util.GitUtils.getPollEnvironment(GitUtils.java:309)
+	at hudson.plugins.git.GitSCM.compareRemoteRevisionWithImpl(GitSCM.java:682)
+	at hudson.plugins.git.GitSCM.compareRemoteRevisionWith(GitSCM.java:657)
+	at hudson.scm.SCM.compareRemoteRevisionWith(SCM.java:391)
+	at hudson.scm.SCM.poll(SCM.java:408)
+	at hudson.model.AbstractProject._poll(AbstractProject.java:1394)
+	at hudson.model.AbstractProject.poll(AbstractProject.java:1297)
+	at hudson.triggers.SCMTrigger$Runner.runPolling(SCMTrigger.java:594)
+	at hudson.triggers.SCMTrigger$Runner.run(SCMTrigger.java:640)
+	at hudson.util.SequentialExecutionQueue$QueueEntry.run(SequentialExecutionQueue.java:119)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

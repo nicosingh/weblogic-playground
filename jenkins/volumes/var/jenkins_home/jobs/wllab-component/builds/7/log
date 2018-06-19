@@ -1,0 +1,90 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/wllab-component
+Cloning the remote Git repository
+Cloning repository https://github.com/nicosingh/wllab.git
+ > git init /var/jenkins_home/workspace/wllab-component # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3e1b84151576c04b0b91e1dd1a889c754ba12a7b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3e1b84151576c04b0b91e1dd1a889c754ba12a7b
+Commit message: "add download-artifact task"
+First time build. Skipping changelog.
+Jenkins Artifactory Plugin version: 2.16.1
+Artifactory integration is disabled
+[wllab-component] $ java -classpath /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/boot/* -Dmaven.home=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3 -Dmaven.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/conf -Dclassworlds.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/m2.conf -Dmaven.multiModuleProjectDirectory=/var/jenkins_home/workspace/wllab-component org.codehaus.plexus.classworlds.launcher.Launcher deploy
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ wllab ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.0:war (default-war) @ wllab ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [wllab] in [/var/jenkins_home/workspace/wllab-component/target/wllab]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/wllab-component/src/main/webapp]
+[INFO] Webapp assembled in [710 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/wllab-component/target/wllab.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ wllab ---
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+Progress (1): 2.2/11 kBProgress (1): 5.0/11 kBProgress (1): 7.7/11 kBProgress (1): 11/11 kB Progress (1): 11 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 kB at 3.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+Progress (1): 2.2/42 kBProgress (1): 5.0/42 kBProgress (1): 7.7/42 kBProgress (1): 11/42 kB Progress (1): 13/42 kBProgress (1): 16/42 kBProgress (1): 19/42 kBProgress (1): 21/42 kBProgress (1): 24/42 kBProgress (1): 27/42 kBProgress (1): 30/42 kBProgress (1): 32/42 kBProgress (1): 36/42 kBProgress (1): 40/42 kBProgress (1): 42 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (42 kB at 54 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+Progress (1): 2.2/4.0 kBProgress (1): 4.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4.0 kB at 4.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom
+Progress (1): 2.8/3.1 kBProgress (1): 3.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom (3.1 kB at 4.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar
+Progress (1): 2.2/233 kBProgress (1): 5.0/233 kBProgress (1): 7.7/233 kBProgress (1): 10/233 kB Progress (1): 13/233 kBProgress (1): 16/233 kBProgress (1): 19/233 kBProgress (1): 21/233 kBProgress (1): 24/233 kBProgress (1): 27/233 kBProgress (1): 30/233 kBProgress (1): 32/233 kBProgress (1): 36/233 kBProgress (1): 40/233 kBProgress (1): 45/233 kBProgress (1): 49/233 kBProgress (1): 53/233 kBProgress (1): 57/233 kBProgress (1): 61/233 kBProgress (1): 65/233 kBProgress (1): 69/233 kBProgress (1): 73/233 kBProgress (1): 77/233 kBProgress (1): 81/233 kBProgress (1): 85/233 kBProgress (1): 90/233 kBProgress (1): 94/233 kBProgress (1): 98/233 kBProgress (1): 102/233 kBProgress (1): 106/233 kBProgress (1): 110/233 kBProgress (1): 114/233 kBProgress (1): 118/233 kBProgress (1): 122/233 kBProgress (1): 126/233 kBProgress (1): 131/233 kBProgress (1): 135/233 kBProgress (1): 139/233 kBProgress (1): 143/233 kBProgress (1): 147/233 kBProgress (1): 151/233 kBProgress (1): 155/233 kBProgress (1): 159/233 kBProgress (1): 163/233 kBProgress (1): 167/233 kBProgress (1): 171/233 kBProgress (1): 176/233 kBProgress (1): 180/233 kBProgress (2): 180/233 kB | 2.2/239 kBProgress (2): 184/233 kB | 2.2/239 kBProgress (3): 184/233 kB | 2.2/239 kB | 2.2/155 kBProgress (3): 188/233 kB | 2.2/239 kB | 2.2/155 kBProgress (3): 192/233 kB | 2.2/239 kB | 2.2/155 kBProgress (3): 192/233 kB | 2.2/239 kB | 5.0/155 kBProgress (3): 196/233 kB | 2.2/239 kB | 5.0/155 kBProgress (3): 196/233 kB | 4.2/239 kB | 5.0/155 kBProgress (3): 196/233 kB | 4.2/239 kB | 7.7/155 kBProgress (3): 196/233 kB | 7.0/239 kB | 7.7/155 kBProgress (3): 196/233 kB | 7.0/239 kB | 10/155 kB Progress (3): 196/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 200/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 204/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 208/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 212/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 217/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 221/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 225/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 229/233 kB | 9.7/239 kB | 10/155 kBProgress (3): 229/233 kB | 12/239 kB | 10/155 kB Progress (3): 233 kB | 12/239 kB | 10/155 kB    Progress (3): 233 kB | 15/239 kB | 10/155 kBProgress (3): 233 kB | 15/239 kB | 13/155 kBProgress (3): 233 kB | 18/239 kB | 13/155 kBProgress (3): 233 kB | 18/239 kB | 16/155 kBProgress (3): 233 kB | 18/239 kB | 19/155 kBProgress (3): 233 kB | 21/239 kB | 19/155 kBProgress (3): 233 kB | 21/239 kB | 21/155 kBProgress (3): 233 kB | 21/239 kB | 24/155 kBProgress (3): 233 kB | 23/239 kB | 24/155 kBProgress (3): 233 kB | 23/239 kB | 27/155 kBProgress (3): 233 kB | 26/239 kB | 27/155 kBProgress (3): 233 kB | 29/239 kB | 27/155 kBProgress (3): 233 kB | 32/239 kB | 27/155 kBProgress (3): 233 kB | 32/239 kB | 30/155 kBProgress (3): 233 kB | 34/239 kB | 30/155 kBProgress (3): 233 kB | 34/239 kB | 32/155 kBProgress (3): 233 kB | 37/239 kB | 32/155 kBProgress (3): 233 kB | 41/239 kB | 32/155 kBProgress (3): 233 kB | 45/239 kB | 32/155 kBProgress (3): 233 kB | 45/239 kB | 36/155 kBProgress (3): 233 kB | 49/239 kB | 36/155 kBProgress (3): 233 kB | 49/239 kB | 40/155 kBProgress (3): 233 kB | 53/239 kB | 40/155 kBProgress (3): 233 kB | 53/239 kB | 45/155 kBProgress (3): 233 kB | 53/239 kB | 49/155 kBProgress (3): 233 kB | 57/239 kB | 49/155 kBProgress (3): 233 kB | 62/239 kB | 49/155 kBProgress (3): 233 kB | 62/239 kB | 53/155 kBProgress (3): 233 kB | 66/239 kB | 53/155 kBProgress (3): 233 kB | 66/239 kB | 57/155 kBProgress (3): 233 kB | 70/239 kB | 57/155 kBProgress (3): 233 kB | 70/239 kB | 61/155 kBProgress (3): 233 kB | 70/239 kB | 65/155 kBProgress (3): 233 kB | 74/239 kB | 65/155 kBProgress (3): 233 kB | 74/239 kB | 69/155 kBProgress (3): 233 kB | 78/239 kB | 69/155 kBProgress (3): 233 kB | 78/239 kB | 73/155 kBProgress (3): 233 kB | 82/239 kB | 73/155 kBProgress (3): 233 kB | 82/239 kB | 77/155 kBProgress (3): 233 kB | 86/239 kB | 77/155 kBProgress (3): 233 kB | 86/239 kB | 81/155 kBProgress (3): 233 kB | 86/239 kB | 85/155 kBProgress (3): 233 kB | 90/239 kB | 85/155 kBProgress (3): 233 kB | 90/239 kB | 90/155 kBProgress (3): 233 kB | 94/239 kB | 90/155 kBProgress (3): 233 kB | 94/239 kB | 94/155 kBProgress (3): 233 kB | 98/239 kB | 94/155 kBProgress (3): 233 kB | 98/239 kB | 98/155 kBProgress (3): 233 kB | 103/239 kB | 98/155 kBProgress (3): 233 kB | 103/239 kB | 102/155 kBProgress (3): 233 kB | 107/239 kB | 102/155 kBProgress (3): 233 kB | 107/239 kB | 106/155 kBProgress (3): 233 kB | 111/239 kB | 106/155 kBProgress (3): 233 kB | 111/239 kB | 110/155 kBProgress (3): 233 kB | 115/239 kB | 110/155 kBProgress (3): 233 kB | 115/239 kB | 114/155 kBProgress (3): 233 kB | 119/239 kB | 114/155 kBProgress (3): 233 kB | 119/239 kB | 118/155 kBProgress (3): 233 kB | 119/239 kB | 122/155 kBProgress (3): 233 kB | 119/239 kB | 126/155 kBProgress (3): 233 kB | 123/239 kB | 126/155 kBProgress (3): 233 kB | 123/239 kB | 131/155 kBProgress (3): 233 kB | 127/239 kB | 131/155 kBProgress (3): 233 kB | 127/239 kB | 135/155 kBProgress (3): 233 kB | 127/239 kB | 139/155 kBProgress (3): 233 kB | 131/239 kB | 139/155 kBProgress (3): 233 kB | 131/239 kB | 143/155 kBProgress (3): 233 kB | 135/239 kB | 143/155 kBProgress (3): 233 kB | 135/239 kB | 147/155 kBProgress (3): 233 kB | 139/239 kB | 147/155 kBProgress (3): 233 kB | 139/239 kB | 151/155 kBProgress (3): 233 kB | 143/239 kB | 151/155 kBProgress (3): 233 kB | 143/239 kB | 155/155 kBProgress (3): 233 kB | 148/239 kB | 155/155 kBProgress (3): 233 kB | 148/239 kB | 155 kB    Progress (3): 233 kB | 152/239 kB | 155 kBProgress (3): 233 kB | 156/239 kB | 155 kBProgress (3): 233 kB | 160/239 kB | 155 kBProgress (3): 233 kB | 164/239 kB | 155 kBProgress (3): 233 kB | 168/239 kB | 155 kBProgress (3): 233 kB | 172/239 kB | 155 kBProgress (3): 233 kB | 176/239 kB | 155 kB                                          Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar (233 kB at 146 kB/s)
+Progress (2): 180/239 kB | 155 kBProgress (2): 184/239 kB | 155 kBProgress (2): 189/239 kB | 155 kBProgress (2): 193/239 kB | 155 kBProgress (2): 197/239 kB | 155 kBProgress (2): 201/239 kB | 155 kBProgress (2): 205/239 kB | 155 kBProgress (2): 209/239 kB | 155 kBProgress (2): 213/239 kB | 155 kBProgress (2): 217/239 kB | 155 kBProgress (2): 221/239 kB | 155 kBProgress (2): 225/239 kB | 155 kBProgress (2): 229/239 kB | 155 kBProgress (2): 234/239 kB | 155 kBProgress (2): 238/239 kB | 155 kBProgress (2): 239 kB | 155 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar (239 kB at 106 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (155 kB at 69 kB/s)
+[INFO] Installing /var/jenkins_home/workspace/wllab-component/target/wllab.war to /var/jenkins_home/.m2/repository/guga/wllab/1.0-SNAPSHOT/wllab-1.0-SNAPSHOT.war
+[INFO] Installing /var/jenkins_home/workspace/wllab-component/pom.xml to /var/jenkins_home/.m2/repository/guga/wllab/1.0-SNAPSHOT/wllab-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ wllab ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 40.979 s
+[INFO] Finished at: 2018-06-11T21:08:35Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy (default-deploy) on project wllab: Deployment failed: repository element was not specified in the POM inside distributionManagement element or in -DaltDeploymentRepository=id::layout::url parameter -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Invoke Artifactory Maven 3' changed build result to FAILURE
+Build step 'Invoke Artifactory Maven 3' marked build as failure
+Finished: FAILURE

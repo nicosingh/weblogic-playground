@@ -1,0 +1,78 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/wllab-component
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7bf3c5cc4538a74f2f5a15786359ca7571894651 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7bf3c5cc4538a74f2f5a15786359ca7571894651
+Commit message: "update version number"
+ > git rev-list --no-walk 7bf3c5cc4538a74f2f5a15786359ca7571894651 # timeout=10
+Jenkins Artifactory Plugin version: 2.16.1
+Artifactory integration is enabled
+[wllab-component] $ java -classpath /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/boot/* -Dmaven.home=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3 -Dmaven.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/conf -DbuildInfoConfig.propertiesFile=/var/jenkins_home/workspace/wllab-component@tmp/buildInfo7156331141951854860.properties -Dm3plugin.lib=/var/jenkins_home/workspace/wllab-component/cache/artifactory-plugin/2.16.1 -Dclassworlds.conf=/var/jenkins_home/workspace/wllab-component/classworlds3956443286869262430conf -Dmaven.multiModuleProjectDirectory=/var/jenkins_home/workspace/wllab-component org.codehaus.plexus.classworlds.launcher.Launcher clean install
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Scanning for projects...
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - 
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - Some problems were encountered while building the effective model for guga:wllab:war:17
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - 'version' contains an expression but should be a constant. @ guga:wllab:${env.BUILD_NUMBER}, /var/jenkins_home/workspace/wllab-component/pom.xml, line 8, column 12
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - 
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - It is highly recommended to fix these problems because they threaten the stability of your build.
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - 
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - For this reason, future Maven versions might no longer support building such malformed projects.
+[main] WARNING org.apache.maven.graph.DefaultGraphBuilder - 
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoRecorder - Initializing Artifactory Build-Info Recording
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - -----------------------------< guga:wllab >-----------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Building wllab Maven Webapp 17
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --------------------------------[ war ]---------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-clean-plugin:3.0.0:clean (default-clean) @ wllab ---
+[main] INFO org.apache.maven.plugins.clean.CleanMojo - Deleting /var/jenkins_home/workspace/wllab-component/target
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-resources-plugin:3.0.2:resources (default-resources) @ wllab ---
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - Using 'UTF-8' encoding to copy filtered resources.
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/main/resources
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-compiler-plugin:3.7.0:compile (default-compile) @ wllab ---
+[main] INFO org.apache.maven.plugin.compiler.CompilerMojo - No sources to compile
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ wllab ---
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - Using 'UTF-8' encoding to copy filtered resources.
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-component/src/test/resources
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ wllab ---
+[main] INFO org.apache.maven.plugin.compiler.TestCompilerMojo - No sources to compile
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-surefire-plugin:2.20.1:test (default-test) @ wllab ---
+[main] INFO org.apache.maven.plugin.surefire.SurefirePlugin - No tests to run.
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-war-plugin:3.2.0:war (default-war) @ wllab ---
+[main] INFO org.apache.maven.plugins.war.WarMojo - Packaging webapp
+[main] INFO org.apache.maven.plugins.war.WarMojo - Assembling webapp [wllab] in [/var/jenkins_home/workspace/wllab-component/target/wllab]
+[main] INFO org.apache.maven.plugins.war.WarMojo - Processing war project
+[main] INFO org.apache.maven.plugins.war.WarMojo - Copying webapp resources [/var/jenkins_home/workspace/wllab-component/src/main/webapp]
+[main] INFO org.apache.maven.plugins.war.WarMojo - Webapp assembled in [305 msecs]
+[main] INFO org.codehaus.plexus.archiver.war.WarArchiver - Building war: /var/jenkins_home/workspace/wllab-component/target/wllab.war
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-install-plugin:2.5.2:install (default-install) @ wllab ---
+[main] INFO org.codehaus.plexus.PlexusContainer - Installing /var/jenkins_home/workspace/wllab-component/target/wllab.war to /var/jenkins_home/.m2/repository/guga/wllab/17/wllab-17.war
+[main] INFO org.codehaus.plexus.PlexusContainer - Installing /var/jenkins_home/workspace/wllab-component/pom.xml to /var/jenkins_home/.m2/repository/guga/wllab/17/wllab-17.pom
+[main] INFO org.jfrog.build.extractor.maven.BuildDeploymentHelper - Artifactory Build Info Recorder: Saving Build Info to '/var/jenkins_home/workspace/wllab-component/target/build-info.json'
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoClientBuilder - Deploying artifact: http://artifactory:8081/artifactory/libs-release-local/guga/wllab/17/wllab-17.war
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoClientBuilder - Deploying artifact: http://artifactory:8081/artifactory/libs-release-local/guga/wllab/17/wllab-17.pom
+[main] INFO org.jfrog.build.extractor.maven.BuildDeploymentHelper - Artifactory Build Info Recorder: Deploying build info ...
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoClientBuilder - Deploying build descriptor to: http://artifactory:8081/artifactory/api/build
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoClientBuilder - Build successfully deployed. Browse it in Artifactory under http://artifactory:8081/artifactory/webapp/builds/wllab-component/17
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - BUILD SUCCESS
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Total time: 26.488 s
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Finished at: 2018-06-18T16:31:31Z
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+Finished: SUCCESS

@@ -1,0 +1,40 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/wllab-component
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3e1b84151576c04b0b91e1dd1a889c754ba12a7b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3e1b84151576c04b0b91e1dd1a889c754ba12a7b
+Commit message: "add download-artifact task"
+ > git rev-list --no-walk 3e1b84151576c04b0b91e1dd1a889c754ba12a7b # timeout=10
+Jenkins Artifactory Plugin version: 2.16.1
+Artifactory integration is disabled
+[wllab-component] $ java -classpath /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/boot/* -Dmaven.home=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3 -Dmaven.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/conf -Dclassworlds.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/m2.conf -Dmaven.multiModuleProjectDirectory=/var/jenkins_home/workspace/wllab-component org.codehaus.plexus.classworlds.launcher.Launcher war
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.375 s
+[INFO] Finished at: 2018-06-18T15:41:36Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "war". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+Build step 'Invoke Artifactory Maven 3' changed build result to FAILURE
+Build step 'Invoke Artifactory Maven 3' marked build as failure
+Finished: FAILURE

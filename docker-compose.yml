@@ -8,6 +8,8 @@ jenkins:
     - "50000:50000"
   volumes:
     - ./jenkins/volumes/var/jenkins_home:/var/jenkins_home
+  links:
+    - artifactory
 artifactory:
   image: docker.bintray.io/jfrog/artifactory-oss:5.0.0
   restart: always

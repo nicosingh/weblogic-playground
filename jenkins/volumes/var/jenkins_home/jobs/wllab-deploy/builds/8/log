@@ -1,0 +1,97 @@
+Started by an SCM change
+Started by an SCM change
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins system variables.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting as environment variables the properties content 
+WEBLOGIC_APP_NAME=wllab
+WEBLOGIC_URL=1.2.3.4
+ARTIFACT_PATH=target/wllab.war
+WEBLOGIC_TARGET=AdminServer
+
+[EnvInject] - Variables injected successfully.
+[EnvInject] - Injecting contributions.
+Building in workspace /var/jenkins_home/workspace/wllab-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 3e1b84151576c04b0b91e1dd1a889c754ba12a7b (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3e1b84151576c04b0b91e1dd1a889c754ba12a7b
+Commit message: "add download-artifact task"
+ > git rev-list --no-walk 98c10763a5cb457da88dd370b657fb2f926c7b7a # timeout=10
+[wllab-deploy] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/mvn clean package antrun:run@deploy-to-****
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ wllab ---
+[INFO] Deleting /var/jenkins_home/workspace/wllab-deploy/target
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-deploy/src/main/resources
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ wllab ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/wllab-deploy/src/test/resources
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ wllab ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ wllab ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:3.2.0:war (default-war) @ wllab ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [wllab] in [/var/jenkins_home/workspace/wllab-deploy/target/wllab]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/wllab-deploy/src/main/webapp]
+[INFO] Webapp assembled in [312 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/wllab-deploy/target/wllab.war
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-antrun-plugin:1.6:run (deploy-to-****) @ wllab ---
+[INFO] Executing tasks
+
+main:
+****.Deployer -remote -upload -noexit -name wllab -source /var/jenkins_home/workspace/wllab-deploy/target/wllab.war -targets AdminServer -adminurl t3://1.2.3.4:7001 -user **** -password ******** -deploy 
+ [wldeploy] ****.Deployer invoked with options:  -remote -upload -noexit -name wllab -source /var/jenkins_home/workspace/wllab-deploy/target/wllab.war -targets AdminServer -adminurl t3://1.2.3.4:7001 -user **** -deploy
+ [wldeploy] Exception in thread "main" ****.Deployer$DeployerException: ****.deploy.api.tools.deployer.DeployerException: Unable to connect to 't3://1.2.3.4:7001': Destination 1.2.3.4, 7001 unreachable; nested exception is: 
+ [wldeploy] 	java.net.ConnectException: Connection refused (Connection refused); No available router to destination. Ensure the url represents a running admin server and that the credentials are correct. If using http protocol, tunneling must be enabled on the admin server.
+ [wldeploy] 	at ****.Deployer.run(Deployer.java:76)
+ [wldeploy] 	at ****.Deployer.mainWithExceptions(Deployer.java:63)
+ [wldeploy] 	at ****.ant.taskdefs.management.DeployerWrapper.main(DeployerWrapper.java:14)
+ [wldeploy] Caused by: ****.deploy.api.tools.deployer.DeployerException: Unable to connect to 't3://1.2.3.4:7001': Destination 1.2.3.4, 7001 unreachable; nested exception is: 
+ [wldeploy] 	java.net.ConnectException: Connection refused (Connection refused); No available router to destination. Ensure the url represents a running admin server and that the credentials are correct. If using http protocol, tunneling must be enabled on the admin server.
+ [wldeploy] 	at ****.deploy.api.tools.deployer.Jsr88Operation.connect(Jsr88Operation.java:317)
+ [wldeploy] 	at ****.deploy.api.tools.deployer.Deployer.perform(Deployer.java:137)
+ [wldeploy] 	at ****.deploy.api.tools.deployer.Deployer.runBody(Deployer.java:88)
+ [wldeploy] 	at ****.utils.compiler.Tool.run(Tool.java:158)
+ [wldeploy] 	at ****.utils.compiler.Tool.run(Tool.java:115)
+ [wldeploy] 	at ****.Deployer.run(Deployer.java:74)
+ [wldeploy] 	... 2 more
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:08 min
+[INFO] Finished at: 2018-06-08T14:41:47Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-antrun-plugin:1.6:run (deploy-to-****) on project wllab: An Ant BuildException has occured: webLogic.Deployer execution failed -> [Help 1]
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

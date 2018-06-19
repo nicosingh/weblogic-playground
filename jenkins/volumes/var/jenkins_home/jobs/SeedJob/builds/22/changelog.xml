@@ -1,0 +1,12 @@
+commit 5783b75e0c7628b8c4285fb16deff784ae7d3177
+tree 608dd764a49688a471eeb63cf400373be538957b
+parent 8ad649e805ac834f41bd9211a8f656418ed24846
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-18 13:16:49 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-06-18 13:16:49 -0400
+
+    add component DSL and update deploy groovy script
+
+
+
+:100644 100644 0ecb9a4392c57d4b320c515a3d277aa67102ac46 c4216db5854d3e0728543491c14f4b8551f62dee M	scripts/environmentVariablesDeploy.groovy
+:100644 100644 05d4f5903cb0e02f4c9516f8f302f939cc9be896 212539cc9be8b783b75753a308960ceb37a0f5f9 M	wllab.groovy
