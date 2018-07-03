@@ -1,7 +1,7 @@
-Started on Jun 19, 2018 2:49:00 PM
+Started on Jul 3, 2018 6:31:55 PM
 Using strategy: Default
 [poll] Last Built Revision: Revision 7bf3c5cc4538a74f2f5a15786359ca7571894651 (origin/master)
-ERROR: Failed to record SCM polling for hudson.model.FreeStyleProject@60e4ce26[wllab-deploy]
+ERROR: Failed to record SCM polling for hudson.model.FreeStyleProject@77f2e1b3[wllab-deploy]
 [8mha:////4KRoIyiKPkRzGQ8CzQ8iWRNDjXmbYsxPRV54UuHcUkzKAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.lang.NullPointerException
 	at hudson.model.RunParameterDefinition.getDefaultParameterValue(RunParameterDefinition.java:174)
 	at hudson.plugins.git.util.GitUtils.addEnvironmentContributingActionsValues(GitUtils.java:332)

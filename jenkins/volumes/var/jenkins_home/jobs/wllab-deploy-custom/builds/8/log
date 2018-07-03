@@ -1,0 +1,74 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins system variables.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Evaluating the Groovy script content
+[EnvInject] - Injecting as environment variables the properties content 
+WEBLOGIC_APP_NAME=wllab
+ARTIFACT_PATH=target/wllab-${ARTIFACT_VERSION}.war
+WEBLOGIC_TARGET=AdminServer
+
+[EnvInject] - Variables injected successfully.
+[EnvInject] - Injecting contributions.
+Building in workspace /var/jenkins_home/workspace/wllab-deploy-custom
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision d767a485f894ac25adbc42f92357c754dfeaaf63 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d767a485f894ac25adbc42f92357c754dfeaaf63
+Commit message: "update count"
+ > git rev-list --no-walk d767a485f894ac25adbc42f92357c754dfeaaf63 # timeout=10
+[EnvInject] - Executing scripts and injecting environment variables after the SCM step.
+[EnvInject] - Evaluating the Groovy script content
+wllab-component #21
+1.2.3.4
+1.2.3.4
+[wllab-deploy-custom] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/mvn -DWEBLOGIC_URL=1.2.3.4 clean antrun:run@download-artifact antrun:run@deploy-to-weblogic
+[INFO] Scanning for projects...
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for guga:wllab:war:8
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 'version' contains an expression but should be a constant. @ guga:wllab:${env.BUILD_NUMBER}, /var/jenkins_home/workspace/wllab-deploy-custom/pom.xml, line 8, column 12
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 8
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ wllab ---
+[INFO] Deleting /var/jenkins_home/workspace/wllab-deploy-custom/target
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-antrun-plugin:1.6:run (download-artifact) @ wllab ---
+[INFO] Executing tasks
+
+main:
+      [get] Getting: http://artifactory:8081/artifactory/libs-release-local/guga/wllab/21/wllab-21.war
+      [get] To: /var/jenkins_home/workspace/wllab-deploy-custom/target/wllab-21.war
+      [get] Error opening connection java.io.FileNotFoundException: http://artifactory:8081/artifactory/libs-release-local/guga/wllab/21/wllab-21.war
+      [get] Error opening connection java.io.FileNotFoundException: http://artifactory:8081/artifactory/libs-release-local/guga/wllab/21/wllab-21.war
+      [get] Error opening connection java.io.FileNotFoundException: http://artifactory:8081/artifactory/libs-release-local/guga/wllab/21/wllab-21.war
+      [get] Can't get http://artifactory:8081/artifactory/libs-release-local/guga/wllab/21/wllab-21.war to /var/jenkins_home/workspace/wllab-deploy-custom/target/wllab-21.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.201 s
+[INFO] Finished at: 2018-07-03T15:31:50Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-antrun-plugin:1.6:run (download-artifact) on project wllab: An Ant BuildException has occured: Can't get http://artifactory:8081/artifactory/libs-release-local/guga/wllab/21/wllab-21.war to /var/jenkins_home/workspace/wllab-deploy-custom/target/wllab-21.war -> [Help 1]
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4PGM3wQFCeTP19rTfrJx33kJf3J2guSqQdVaoJPPUnCoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

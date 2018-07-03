@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.5"/>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.2">
+              <sha1>d767a485f894ac25adbc42f92357c754dfeaaf63</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>8</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/nicosingh/wllab.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/workspace/wllab-deploy-custom</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.RunParameterValue>
+          <name>upstreamJob</name>
+          <description></description>
+          <runId>wllab-component#21</runId>
+        </hudson.model.RunParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>WEBLOGIC_URL</name>
+          <description></description>
+          <value>1.2.3.4</value>
+        </hudson.model.StringParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.1.16">
+          <name>WEBLOGIC_CREDENTIALS</name>
+          <description></description>
+          <value>1.2.3.4</value>
+          <isDefaultValue>false</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.RunParameterDefinition>
+              <name>upstreamJob</name>
+              <description></description>
+              <projectName>wllab-component</projectName>
+              <filter>SUCCESSFUL</filter>
+            </hudson.model.RunParameterDefinition>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>WEBLOGIC_URL</name>
+              <description></description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>1.2.3.4</string>
+                  <string>4.5.6.7</string>
+                  <string>5.6.7.8</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+  </actions>
+  <queueId>95</queueId>
+  <timestamp>1530631897213</timestamp>
+  <startTime>1530631897233</startTime>
+  <result>FAILURE</result>
+  <duration>13449</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/wllab-deploy-custom</workspace>
+  <hudsonVersion>2.84</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.9.0">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

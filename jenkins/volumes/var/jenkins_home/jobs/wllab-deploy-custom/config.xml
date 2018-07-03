@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+    <actions/>
+    <description/>
+    <keepDependencies>false</keepDependencies>
+    <properties>
+        <hudson.model.ParametersDefinitionProperty>
+            <parameterDefinitions>
+                <hudson.model.RunParameterDefinition>
+                    <name>upstreamJob</name>
+                    <projectName>wllab-component</projectName>
+                    <description/>
+                    <filter>SUCCESSFUL</filter>
+                </hudson.model.RunParameterDefinition>
+                <hudson.model.ChoiceParameterDefinition>
+                    <choices class="java.util.Arrays$ArrayList">
+                        <a class="string-array">
+                            <string>1.2.3.4</string>
+                            <string>5.6.7.8</string>
+                            <string>9.0.1.2</string>
+                        </a>
+                    </choices>
+                    <name>WEBLOGIC_URL</name>
+                    <description/>
+                </hudson.model.ChoiceParameterDefinition>
+                <com.cloudbees.plugins.credentials.CredentialsParameterDefinition plugin="credentials@2.1.16">
+                    <name>WEBLOGIC_CREDENTIALS</name>
+                    <description/>
+                    <defaultValue/>
+                    <credentialType>com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl</credentialType>
+                    <required>false</required>
+                </com.cloudbees.plugins.credentials.CredentialsParameterDefinition>
+            </parameterDefinitions>
+        </hudson.model.ParametersDefinitionProperty>
+        <com.coravy.hudson.plugins.github.GithubProjectProperty>
+            <projectUrl>https://github.com/nicosingh/wllab/</projectUrl>
+        </com.coravy.hudson.plugins.github.GithubProjectProperty>
+        <EnvInjectJobProperty>
+            <info>
+                <propertiesContent>ARTIFACT_PATH=target/wllab-${ARTIFACT_VERSION}.war
+WEBLOGIC_APP_NAME=wllab
+WEBLOGIC_TARGET=AdminServer</propertiesContent>
+                <groovyScriptContent>import java.util.List
+import java.util.Map
+import hudson.model.ParametersAction
+
+def out = [:]
+def parameters = currentBuild.getAction(ParametersAction).getParameters()
+def upstreamJobName = parameters.find { it.name == 'environment' } != null ? parameters.find { it.name == 'environment' }.value : 'upstreamJob'
+
+//get artifact version from upstream job
+def upstreamJob = parameters.find { it.name == upstreamJobName }
+out['ARTIFACT_VERSION'] = upstreamJob.getRun().getEnvVars().get('BUILD_NUMBER')
+out['ARTIFACT_URL'] = "http://artifactory:8081/artifactory/libs-release-local/guga/wllab/" + out['ARTIFACT_VERSION'] + "/wllab-" + out['ARTIFACT_VERSION'] + ".war"
+
+//return result
+return out
+</groovyScriptContent>
+                <loadFilesFromMaster>false</loadFilesFromMaster>
+            </info>
+            <on>true</on>
+            <keepJenkinsSystemVariables>true</keepJenkinsSystemVariables>
+            <keepBuildVariables>true</keepBuildVariables>
+            <overrideBuildParameters>false</overrideBuildParameters>
+            <contributors/>
+        </EnvInjectJobProperty>
+    </properties>
+    <canRoam>true</canRoam>
+    <disabled>false</disabled>
+    <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+    <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+    <triggers/>
+    <concurrentBuild>false</concurrentBuild>
+    <builders>
+        <hudson.tasks.Maven>
+            <targets>clean antrun:run@download-artifact antrun:run@deploy-to-weblogic</targets>
+            <mavenName>maven-3.5.3</mavenName>
+            <jvmOptions/>
+            <usePrivateRepository>false</usePrivateRepository>
+            <injectBuildVariables>true</injectBuildVariables>
+        </hudson.tasks.Maven>
+    </builders>
+    <publishers/>
+    <buildWrappers>
+        <org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper>
+            <bindings>
+                <org.jenkinsci.plugins.credentialsbinding.impl.UsernamePasswordMultiBinding>
+                    <credentialsId>${WEBLOGIC_CREDENTIALS}</credentialsId>
+                    <usernameVariable>WEBLOGIC_USER</usernameVariable>
+                    <passwordVariable>WEBLOGIC_PASS</passwordVariable>
+                </org.jenkinsci.plugins.credentialsbinding.impl.UsernamePasswordMultiBinding>
+            </bindings>
+        </org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper>
+    </buildWrappers>
+    <scm class="hudson.plugins.git.GitSCM">
+        <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+                <url>https://github.com/nicosingh/wllab.git</url>
+            </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+            <hudson.plugins.git.BranchSpec>
+                <name>master</name>
+            </hudson.plugins.git.BranchSpec>
+        </branches>
+        <configVersion>2</configVersion>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <gitTool>Default</gitTool>
+        <browser class="hudson.plugins.git.browser.GithubWeb">
+            <url>https://github.com/nicosingh/wllab/</url>
+        </browser>
+    </scm>
+</project>

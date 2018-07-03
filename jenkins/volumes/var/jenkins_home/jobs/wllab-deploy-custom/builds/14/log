@@ -1,0 +1,47 @@
+Started by user [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins system variables.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting as environment variables the properties content 
+WEBLOGIC_APP_NAME=wllab
+ARTIFACT_PATH=target/wllab-${ARTIFACT_VERSION}.war
+WEBLOGIC_TARGET=AdminServer
+
+[EnvInject] - Variables injected successfully.
+[EnvInject] - Injecting contributions.
+Building in workspace /var/jenkins_home/workspace/wllab-deploy-custom
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nicosingh/wllab.git # timeout=10
+Fetching upstream changes from https://github.com/nicosingh/wllab.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nicosingh/wllab.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision d767a485f894ac25adbc42f92357c754dfeaaf63 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d767a485f894ac25adbc42f92357c754dfeaaf63
+Commit message: "update count"
+ > git rev-list --no-walk d767a485f894ac25adbc42f92357c754dfeaaf63 # timeout=10
+[wllab-deploy-custom] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.5.3/bin/mvn ******** -DWEBLOGIC_URL=4.5.6.7 clean antrun:run@download-artifact antrun:run@deploy-to-weblogic
+[INFO] Scanning for projects...
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for guga:wllab:war:14
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 'version' contains an expression but should be a constant. @ guga:wllab:${env.BUILD_NUMBER}, /var/jenkins_home/workspace/wllab-deploy-custom/pom.xml, line 8, column 12
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4I5tENPKjG2oNMGYofK3t0ZyE3YPRrq8glvDKhdXa3xMAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[INFO] 
+[INFO] -----------------------------< guga:wllab >-----------------------------
+[INFO] Building wllab Maven Webapp 14
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ wllab ---
+[INFO] Deleting /var/jenkins_home/workspace/wllab-deploy-custom/target
+[INFO] 
+[8mha:////4MPDszCXXT0xdYBQ2AttTRjMbU+34hYDSGfWtWL0kU9cAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-antrun-plugin:1.6:run (download-artifact) @ wllab ---
+Build was aborted
+Aborted by [8mha:////4FJyW/jo2gSEMNFgMtSNWnY6Onki+oct1TnH4hsXpTdAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL9xJTczDwAEmIUecAAAAA=[0mAdmin User
+Finished: ABORTED

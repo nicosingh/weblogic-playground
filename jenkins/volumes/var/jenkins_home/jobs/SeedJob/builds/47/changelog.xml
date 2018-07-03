@@ -1,0 +1,11 @@
+commit 1c28d6f13ccdfd85b9eb804c26c1d741354afd62
+tree 4f6e2ba10ecd63ae03929bd49ba8993dc6f58910
+parent d2c9dc708b5722107ee81f90819826af326c6dc8
+author Nicolas Singh <Nicolas_Singh@gap.com> 2018-07-03 14:31:21 -0400
+committer Nicolas Singh <Nicolas_Singh@gap.com> 2018-07-03 14:31:21 -0400
+
+    add wllab-deploy-custom job
+
+
+
+:100644 100644 cbdc3b10cb2107e3a60647a1d65b73e5061ddb8b 2dabcff490866d379a63d981fe63921ed2c543c1 M	wllab.groovy

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-07-03 18:21:11.938 UTC</timestamp>
+  <md5sum>45abf84e612a122dc90cfc892703c7ed</md5sum>
+  <fileName>Credential id=5.6.7.8 name=admin/******</fileName>
+  <usages>
+    <entry>
+      <string>wllab-deploy-custom</string>
+      <ranges>14</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

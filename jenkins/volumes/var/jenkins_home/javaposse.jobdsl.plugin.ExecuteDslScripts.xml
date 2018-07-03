@@ -12,7 +12,7 @@
       <string>wllab-deploy</string>
       <javaposse.jobdsl.plugin.SeedReference>
         <seedJobName>SeedJob</seedJobName>
-        <digest>d63a38924f4c0bdf68b36bf004718179</digest>
+        <digest>8a07681b4e6a6cffdc76d6ee5efa27ca</digest>
       </javaposse.jobdsl.plugin.SeedReference>
     </entry>
     <entry>
@@ -20,6 +20,13 @@
       <javaposse.jobdsl.plugin.SeedReference>
         <seedJobName>SeedJob</seedJobName>
         <digest>3d25ef5a6c14fe1954580e5facabc4a6</digest>
+      </javaposse.jobdsl.plugin.SeedReference>
+    </entry>
+    <entry>
+      <string>wllab-deploy-custom</string>
+      <javaposse.jobdsl.plugin.SeedReference>
+        <seedJobName>SeedJob</seedJobName>
+        <digest>7c1c3e9c6831a2e6f3f9113f157c7a1a</digest>
       </javaposse.jobdsl.plugin.SeedReference>
     </entry>
   </generatedJobMap>
